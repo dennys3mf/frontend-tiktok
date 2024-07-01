@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "19000:19000"
+      - "8081:8081"
+    volumes:
+      - .:/app
+    stdin_open: true
+    tty: true
